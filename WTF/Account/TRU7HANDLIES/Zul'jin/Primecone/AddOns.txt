@@ -1,0 +1,6 @@
+AllTheThings: disabled
+CovenantMissionHelper: disabled
+FakeAchievement: disabled
+HandyNotes: disabled
+HandyNotes_Shadowlands: disabled
+MythicDungeonTools: disabled

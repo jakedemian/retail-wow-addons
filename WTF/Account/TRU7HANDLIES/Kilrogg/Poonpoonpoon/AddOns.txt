@@ -1,0 +1,7 @@
+AAP-Core: disabled
+TradeSkillMaster_Accounting: disabled
+TradeSkillMaster_AuctionDB: disabled
+TradeSkillMaster_Auctioning: disabled
+TradeSkillMaster_Crafting: disabled
+TradeSkillMaster_Shopping: disabled
+TradeSkillMaster_Vendoring: disabled

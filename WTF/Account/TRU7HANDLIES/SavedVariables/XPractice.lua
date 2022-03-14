@@ -1,0 +1,40 @@
+
+XPRACTICE_SAVEDATA = {
+	["FATESCRIBEMULTIPLAYER"] = {
+		["ringdir6"] = 3,
+		["goalangle2"] = 0,
+		["ringrune3"] = 7,
+		["ringangle1"] = 3.141592653589793,
+		["goalangle1"] = 0,
+		["ringangle4"] = 3.141592653589793,
+		["ringdir3"] = 3,
+		["ringdir2"] = 3,
+		["ringangle3"] = 3.141592653589793,
+		["ringangle2"] = 3.141592653589793,
+		["goalangle5"] = 0,
+		["ringdir5"] = 3,
+		["ringrune4"] = 7,
+		["ringrune5"] = 7,
+		["ringdir4"] = 3,
+		["ringdir1"] = 3,
+		["ringrune6"] = 7,
+		["customrunes"] = false,
+		["customgoals"] = false,
+		["ringlasers"] = true,
+		["goalangle3"] = 0,
+		["ringangle5"] = 3.141592653589793,
+		["goalangle4"] = 0,
+		["ringangle6"] = 3.141592653589793,
+		["ringrune1"] = 7,
+		["goalangle6"] = 0,
+		["ringrune2"] = 7,
+	},
+	["PAINSMITH"] = {
+	},
+	["KELTHUZADMULTIPLAYER"] = {
+		["savedbossqueue"] = {
+		},
+		["swirltype"] = 5,
+		["mobappearance"] = 1,
+	},
+}

@@ -1,0 +1,11 @@
+## Interface: 90001
+## Author: Spielstein@Curse
+## Title: GroupfinderFlags
+## Notes: Display the country's flags of the realm of a group finder applicant
+## Version : 0.12
+## SavedVariables: GroupfinderFlagsDB
+
+main.lua
+locale.lua
+eu_realms.lua
+us_realms.lua

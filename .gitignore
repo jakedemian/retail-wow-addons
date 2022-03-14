@@ -1,0 +1,13 @@
+blob_storage/
+Cache/
+Errors/
+GPUCache/
+Logs/
+UTILS/
+.curseclient
+.flavor.info
+BlizzardError.exe
+DBGHELP.DLL
+Wow.exe
+d3d12.dll
+dxilconv7.dll

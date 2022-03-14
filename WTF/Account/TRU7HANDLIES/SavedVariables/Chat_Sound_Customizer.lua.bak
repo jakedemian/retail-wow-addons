@@ -1,0 +1,40 @@
+
+ChatSoundCustomizerDB = {
+	["namespaces"] = {
+		["ZoneChannel"] = {
+		},
+		["Newcomer"] = {
+		},
+		["IgnoreList"] = {
+		},
+		["LDB"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Fhdgshsfnsdf - Zul'jin"] = "Default",
+		["Primedrood - Zul'jin"] = "Default",
+		["Primecast - Zul'jin"] = "Default",
+		["Primestab - Zul'jin"] = "Default",
+		["Primesham - Zul'jin"] = "Default",
+		["Primepunch - Zul'jin"] = "Default",
+		["Primepaladin - Zul'jin"] = "Default",
+		["Primeslay - Zul'jin"] = "Default",
+		["Primelocker - Zul'jin"] = "Default",
+		["Primedeth - Zul'jin"] = "Default",
+		["Primepriest - Zul'jin"] = "Default",
+		["Primepal - Zul'jin"] = "Default",
+		["Primeshoot - Zul'jin"] = "Default",
+		["Primeslam - Zul'jin"] = "Default",
+		["Primadin - Stormrage"] = "Default",
+		["Diuhreeuh - Area 52"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["sounds"] = {
+				["CHAT_MSG_RAID"] = "None",
+				["CHAT_MSG_WHISPER"] = "None",
+				["CHAT_MSG_BN_WHISPER"] = "None",
+			},
+		},
+	},
+}

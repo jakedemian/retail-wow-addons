@@ -1,0 +1,84 @@
+
+PawnOptions = {
+	["LastVersion"] = 2.0246,
+	["ItemLevels"] = {
+		{
+			["ID"] = 122250,
+			["Level"] = 26,
+			["Link"] = "|cff00ccff|Hitem:122250::::::::22:62:::1:3592:::|h[Tattered Dreadmist Mask]|h|r",
+		}, -- [1]
+		{
+			["ID"] = 122664,
+			["Level"] = 26,
+			["Link"] = "|cff00ccff|Hitem:122664::::::::22:62:::1:582:::|h[Eternal Horizon Choker]|h|r",
+		}, -- [2]
+		{
+			["ID"] = 122360,
+			["Level"] = 26,
+			["Link"] = "|cff00ccff|Hitem:122360::::::::22:62:::1:3592:::|h[Tattered Dreadmist Mantle]|h|r",
+		}, -- [3]
+		nil, -- [4]
+		{
+			["ID"] = 122384,
+			["Level"] = 26,
+			["Link"] = "|cff00ccff|Hitem:122384::::::::22:62:::1:3592:::|h[Tattered Dreadmist Robe]|h|r",
+		}, -- [5]
+		{
+			["ID"] = 59083,
+			["Level"] = 28,
+			["Link"] = "|cff0070dd|Hitem:59083::::::::22:62:512:11:2:3646:5742:22:::|h[Sash of the Blind Princess]|h|r",
+		}, -- [6]
+		{
+			["ID"] = 122256,
+			["Level"] = 26,
+			["Link"] = "|cff00ccff|Hitem:122256::::::::22:62:::1:3592:::|h[Tattered Dreadmist Leggings]|h|r",
+		}, -- [7]
+		{
+			["ID"] = 157682,
+			["Level"] = 25,
+			["Link"] = "|cff1eff00|Hitem:157682::::::::20:64::::::|h[Spellsculptor's Sandals]|h|r",
+		}, -- [8]
+		{
+			["ID"] = 157689,
+			["Level"] = 25,
+			["Link"] = "|cff1eff00|Hitem:157689::::::::20:64::::::|h[Spellsculptor's Wristwraps]|h|r",
+		}, -- [9]
+		{
+			["ID"] = 59087,
+			["Level"] = 27,
+			["Link"] = "|cff0070dd|Hitem:59087::::::::21:62:512:11:2:3646:5742:21:::|h[Gloves of Anguished Cries]|h|r",
+		}, -- [10]
+		nil, -- [11]
+		nil, -- [12]
+		{
+			["ID"] = 122362,
+			["Level"] = 26,
+			["AlsoFitsIn"] = 14,
+			["Link"] = "|cff00ccff|Hitem:122362::::::::22:62::::::|h[Discerning Eye of the Beast]|h|r",
+		}, -- [13]
+		{
+			["ID"] = 122530,
+			["Level"] = 26,
+			["AlsoFitsIn"] = 13,
+			["Link"] = "|cff00ccff|Hitem:122530::::::::22:62::::::|h[Inherited Mark of Tyranny]|h|r",
+		}, -- [14]
+		{
+			["ID"] = 122262,
+			["Level"] = 26,
+			["Link"] = "|cff00ccff|Hitem:122262::::::::22:62:::1:3592:::|h[Ancient Bloodmoon Cloak]|h|r",
+		}, -- [15]
+		{
+			["ID"] = 122353,
+			["Level"] = 26,
+			["Link"] = "|cff00ccff|Hitem:122353::::::::22:62:::1:582:::|h[Dignified Headmaster's Charge]|h|r",
+		}, -- [16]
+	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Paintprimer-Kel'Thuzad",
+	["LastKeybindingsSet"] = 1,
+}
+PawnMrRobotScaleProviderOptions = {
+	["LastClass"] = "MAGE",
+	["LastAdded"] = 1,
+}

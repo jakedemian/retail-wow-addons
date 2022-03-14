@@ -1,0 +1,12 @@
+<Bindings>
+	<Binding name="NOTESTOGGLE" description="Notes starten" header="NOTESHEADER" category="ADDONS" runOnUp="true">
+		if (keystate ~= "down") then
+		    NotesFrame_Toggle();
+		end
+	</Binding>
+	<Binding name="MININOTESTOGGLE" description="Mini-Notes starten" category="ADDONS" runOnUp="true">
+		if (keystate ~= "down") then
+		    NotesMiniFrame_Toggle();
+		end
+	</Binding>
+</Bindings>

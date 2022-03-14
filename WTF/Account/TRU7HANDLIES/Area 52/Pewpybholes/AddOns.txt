@@ -1,0 +1,10 @@
+AAP-Core: disabled
+TinyInspect: disabled
+!InspectFix: disabled
+Pawn: disabled
+BigWigs_Core: enabled
+BigWigs_Options: enabled
+BigWigs_Plugins: enabled
+WeakAurasCompanion: enabled
+BigWigs_Countdown_HeroesOfTheStorm: enabled
+LittleWigs: enabled

@@ -1,0 +1,55 @@
+
+MacroToolkitDB = {
+	["char"] = {
+		["Primeshoot - Zul'jin"] = {
+			["backups"] = {
+			},
+			["extended"] = {
+				["121"] = {
+					["name"] = " ",
+					["icon"] = "462650",
+					["body"] = "#showtooltip Binding Shot\n/use [@cursor] Binding Shot",
+				},
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Fhdgshsfnsdf - Zul'jin"] = "profile",
+		["Primedrood - Zul'jin"] = "profile",
+		["Primecast - Zul'jin"] = "profile",
+		["Primestab - Zul'jin"] = "profile",
+		["Primesham - Zul'jin"] = "profile",
+		["Primepunch - Zul'jin"] = "profile",
+		["Primepaladin - Zul'jin"] = "profile",
+		["Primeslay - Zul'jin"] = "profile",
+		["Primelocker - Zul'jin"] = "profile",
+		["Primedeth - Zul'jin"] = "profile",
+		["Primepriest - Zul'jin"] = "profile",
+		["Primepal - Zul'jin"] = "profile",
+		["Primeshoot - Zul'jin"] = "profile",
+		["Primeslam - Zul'jin"] = "profile",
+		["Primadin - Stormrage"] = "profile",
+		["Diuhreeuh - Area 52"] = "profile",
+	},
+	["global"] = {
+		["ebackups"] = {
+		},
+		["extra"] = {
+			["1001"] = {
+				["body"] = "",
+				["name"] = " ",
+				["texture"] = "INV_Misc_QuestionMark",
+			},
+		},
+		["backups"] = {
+		},
+	},
+	["profiles"] = {
+		["profile"] = {
+			["y"] = 745.42626953125,
+			["x"] = 800.0650024414062,
+			["height"] = 424.0000915527344,
+			["override"] = true,
+		},
+	},
+}

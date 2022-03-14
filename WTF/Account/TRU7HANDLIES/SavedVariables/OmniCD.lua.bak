@@ -1,0 +1,133 @@
+
+OmniCDDB = {
+	["profileKeys"] = {
+		["Primelocker - Zul'jin"] = "Default",
+		["Primecast - Zul'jin"] = "Default",
+		["Rotrin - Area 52"] = "Default",
+		["Primerlock - Stormrage"] = "Default",
+		["Grabbahan - Moon Guard"] = "Default",
+		["Primeage - Stormrage"] = "Default",
+		["Dulgan - Kilrogg"] = "Default",
+		["Primeslam - Stormrage"] = "Default",
+		["Peepeesmalls - Stormrage"] = "Default",
+		["Primedeath - Stormrage"] = "Default",
+		["Primeslam - Zul'jin"] = "Default",
+		["Primepriest - Zul'jin"] = "Default",
+		["Primesham - Zul'jin"] = "Default",
+		["Primesham - Stormrage"] = "Default",
+		["Primepunch - Zul'jin"] = "Default",
+		["Primeslay - Zul'jin"] = "Default",
+		["Fhdgshsfnsdf - Zul'jin"] = "Default",
+		["Primedrood - Stormrage"] = "Default",
+		["Primeshoot - Zul'jin"] = "Default",
+		["Primadin - Stormrage"] = "Default",
+		["Plskillme - Kilrogg"] = "Default",
+		["Primestab - Zul'jin"] = "Default",
+		["Primedeth - Zul'jin"] = "Default",
+		["Primehunt - Stormrage"] = "Default",
+		["Primepal - Zul'jin"] = "Default",
+		["Primestab - Stormrage"] = "Default",
+		["Primepaladin - Zul'jin"] = "Default",
+		["Primedrood - Zul'jin"] = "Default",
+		["Diuhreeuh - Area 52"] = "Default",
+	},
+	["global"] = {
+		["disableElvMsg"] = true,
+		["oodChk"] = 220302,
+		["oodVer"] = 2640,
+	},
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["cooldowns"] = {
+	},
+	["version"] = 2.51,
+	["profiles"] = {
+		["Default"] = {
+			["Party"] = {
+				["party"] = {
+					["icons"] = {
+						["scale"] = 0.8800000000000001,
+					},
+					["position"] = {
+						["offsetX"] = 0,
+						["anchor"] = "TOPRIGHT",
+						["attachMore"] = "LEFT",
+						["columns"] = 1,
+						["attach"] = "TOPLEFT",
+						["layout"] = "vertical",
+						["preset"] = "TOPLEFT",
+						["offsetY"] = 9,
+						["anchorMore"] = "LEFT",
+					},
+					["manualPos"] = {
+						["raidCDBar"] = {
+							["y"] = 633.8853582567244,
+							["x"] = 329.3158259457559,
+						},
+						["interruptBar"] = {
+							["y"] = 608.2846908533611,
+							["x"] = 260.5156891748065,
+						},
+					},
+				},
+				["noneZoneSetting"] = "party",
+				["arena"] = {
+					["extraBars"] = {
+						["raidCDBar"] = {
+							["enabled"] = true,
+						},
+						["interruptBar"] = {
+							["enabled"] = true,
+						},
+					},
+					["manualPos"] = {
+						["interruptBar"] = {
+							["y"] = 469.6184157379248,
+							["x"] = 209.8486945713357,
+						},
+						["raidCDBar"] = {
+							["y"] = 365.0853085291346,
+							["x"] = 211.982715540651,
+						},
+					},
+					["icons"] = {
+						["scale"] = 0.8800000000000001,
+					},
+					["position"] = {
+						["anchor"] = "TOPRIGHT",
+						["attachMore"] = "LEFT",
+						["columns"] = 1,
+						["layout"] = "vertical",
+						["attach"] = "TOPLEFT",
+						["preset"] = "TOPLEFT",
+						["offsetY"] = 9,
+						["offsetX"] = 0,
+						["anchorMore"] = "LEFT",
+					},
+					["general"] = {
+						["zoneSelected"] = "party",
+					},
+				},
+				["raid"] = {
+					["manualPos"] = {
+						["raidCDBar"] = {
+							["y"] = 352.2849400374143,
+							["x"] = 201.31525473701,
+						},
+						["interruptBar"] = {
+							["y"] = 352.8186192299363,
+							["x"] = 291.448399663117,
+						},
+					},
+				},
+				["visibility"] = {
+					["finder"] = true,
+					["raid"] = true,
+					["none"] = true,
+				},
+			},
+		},
+	},
+}

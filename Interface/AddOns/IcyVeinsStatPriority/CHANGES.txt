@@ -1,0 +1,28 @@
+lightweight tag 24b1d38c4e595a6fc1874e0322af70e78d33a7ed 2021-11-07
+Author:	KevinSK <shinozakisama@live.com>
+Date:	Sun Nov 7 11:48:23 2021 +0800
+
+commit 24b1d38c4e595a6fc1874e0322af70e78d33a7ed
+Author: KevinSK <shinozakisama@live.com>
+Date:   Sun Nov 7 11:48:23 2021 +0800
+
+    update data
+
+commit 351f825f294bb390d5097df37aecf6cf90003dc0
+Author: KevinSK <shinozakisama@live.com>
+Date:   Sun Nov 7 11:48:12 2021 +0800
+
+    add version text
+
+commit f147b7aaa8abc6922dffc89099d0e1e826a0e78a
+Author: KevinSK <shinozakisama@live.com>
+Date:   Sun Nov 7 11:28:42 2021 +0800
+
+    implement view all sp function
+
+commit e675c6dd3df639aca162d72d627d7f9b3ffa6742
+Author: KevinSK <shinozakisama@live.com>
+Date:   Sun Nov 7 08:26:05 2021 +0800
+
+    combine show&hide
+

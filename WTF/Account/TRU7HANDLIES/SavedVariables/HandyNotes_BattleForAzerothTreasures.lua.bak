@@ -1,0 +1,82 @@
+
+HandyNotes_BattleForAzerothTreasuresDB = {
+	["profileKeys"] = {
+		["Primelocker - Zul'jin"] = "Primelocker - Zul'jin",
+		["Primewar - Stormrage"] = "Primewar - Stormrage",
+		["Zethyn - Stormrage"] = "Zethyn - Stormrage",
+		["Primerlock - Stormrage"] = "Primerlock - Stormrage",
+		["Fhayslam - Area 52"] = "Fhayslam - Area 52",
+		["Faogar - Stormrage"] = "Faogar - Stormrage",
+		["Primedrood - Stormrage"] = "Primedrood - Stormrage",
+		["Peepeesmalls - Stormrage"] = "Peepeesmalls - Stormrage",
+		["Primedeath - Stormrage"] = "Primedeath - Stormrage",
+		["Primadin - Stormrage"] = "Primadin - Stormrage",
+		["Primesham - Stormrage"] = "Primesham - Stormrage",
+		["Dulgan - Kilrogg"] = "Dulgan - Kilrogg",
+		["Kranu - Stormrage"] = "Kranu - Stormrage",
+		["Primestab - Stormrage"] = "Primestab - Stormrage",
+		["Ryto - Stormrage"] = "Ryto - Stormrage",
+		["Tethock - Stormrage"] = "Tethock - Stormrage",
+		["Bjorton - Stormrage"] = "Bjorton - Stormrage",
+		["Primelight - Stormrage"] = "Primelight - Stormrage",
+		["Rhyolun - Stormrage"] = "Rhyolun - Stormrage",
+		["Primehunt - Stormrage"] = "Primehunt - Stormrage",
+		["Thyyr - Stormrage"] = "Thyyr - Stormrage",
+		["Prettyflower - Stormrage"] = "Prettyflower - Stormrage",
+		["Primepriest - Zul'jin"] = "Primepriest - Zul'jin",
+		["Tyeir - Stormrage"] = "Tyeir - Stormrage",
+		["Primeage - Stormrage"] = "Primeage - Stormrage",
+	},
+	["profiles"] = {
+		["Primelocker - Zul'jin"] = {
+		},
+		["Primewar - Stormrage"] = {
+		},
+		["Zethyn - Stormrage"] = {
+		},
+		["Primerlock - Stormrage"] = {
+		},
+		["Fhayslam - Area 52"] = {
+		},
+		["Faogar - Stormrage"] = {
+		},
+		["Primedrood - Stormrage"] = {
+		},
+		["Peepeesmalls - Stormrage"] = {
+		},
+		["Primedeath - Stormrage"] = {
+		},
+		["Primadin - Stormrage"] = {
+		},
+		["Primesham - Stormrage"] = {
+		},
+		["Dulgan - Kilrogg"] = {
+		},
+		["Kranu - Stormrage"] = {
+		},
+		["Primestab - Stormrage"] = {
+		},
+		["Ryto - Stormrage"] = {
+		},
+		["Tethock - Stormrage"] = {
+		},
+		["Bjorton - Stormrage"] = {
+		},
+		["Primelight - Stormrage"] = {
+		},
+		["Rhyolun - Stormrage"] = {
+		},
+		["Primehunt - Stormrage"] = {
+		},
+		["Thyyr - Stormrage"] = {
+		},
+		["Prettyflower - Stormrage"] = {
+		},
+		["Primepriest - Zul'jin"] = {
+		},
+		["Tyeir - Stormrage"] = {
+		},
+		["Primeage - Stormrage"] = {
+		},
+	},
+}

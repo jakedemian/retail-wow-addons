@@ -1,0 +1,67 @@
+
+SkinnerDB = {
+	["namespaces"] = {
+		["ViewPort"] = {
+		},
+		["MiddleFrames"] = {
+		},
+		["TopFrame"] = {
+		},
+		["UIButtons"] = {
+		},
+		["BottomFrame"] = {
+		},
+		["UnitFrames"] = {
+		},
+	},
+	["profileKeys"] = {
+		["Primesham - Zul'jin"] = "ElvUI",
+		["Dulgan - Kilrogg"] = "ElvUI",
+		["Primepriest - Zul'jin"] = "ElvUI",
+		["Primestab - Stormrage"] = "ElvUI",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+		["ElvUI"] = {
+			["BdTexture"] = "ElvUI Blank",
+			["Backdrop"] = {
+				["b"] = 0.1,
+				["g"] = 0.1,
+				["r"] = 0.1,
+			},
+			["Gradient"] = {
+				["enable"] = false,
+				["texture"] = "ElvUI Blank",
+			},
+			["BdTileSize"] = 0,
+			["StatusBar"] = {
+				["texture"] = "ElvUI Norm",
+			},
+			["BackdropBorder"] = {
+				["b"] = 0,
+				["g"] = 0,
+				["r"] = 0,
+			},
+			["WorldMap"] = {
+				["skin"] = false,
+			},
+			["TooltipBorder"] = {
+				["b"] = 0,
+				["g"] = 0,
+				["r"] = 0,
+			},
+			["Nameplates"] = false,
+			["BdDefault"] = false,
+			["BdInset"] = -1,
+			["BdBorderTexture"] = "ElvUI GlowBorder",
+			["ChatEditBox"] = {
+				["style"] = 1,
+				["skin"] = false,
+			},
+			["BdEdgeSize"] = 1,
+			["DropDownButtons"] = false,
+			["Buffs"] = false,
+		},
+	},
+}

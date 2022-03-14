@@ -1,0 +1,11 @@
+## Interface: 80100
+## Title: Tukui RoleIcons for |cffff8000Tukui|r
+## Notes: RoleIcons for Tukui 18, Battle for Azeroth 8.0.0
+## Version: 1.05
+## Author: Maximvs
+## RequiredDeps: Tukui
+## Thanks to: Tukz, Azilroka, Blazeflack and everyone from the Tukui community.
+## X-Tukui-ProjectID: 34
+## X-Tukui-ProjectFolders: Tukui_RoleIcons
+
+Tukui_RoleIcons.lua

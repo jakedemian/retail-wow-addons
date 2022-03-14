@@ -1,0 +1,44 @@
+VER 3 0100000000000004 "flash" "135907"
+#showtooltip Flash Heal
+/use [@mouseover,help,nodead][help,nodead][@player] Flash Heal
+END
+VER 3 0100000000000007 "guardian" "237542"
+#showtooltip Guardian Spirit
+/use [@mouseover,help,nodead][help,nodead][@player] Guardian Spirit
+END
+VER 3 0100000000000002 "heal" "135913"
+#showtooltip Heal
+/use [@mouseover,help,nodead][help,nodead][@player] Heal
+END
+VER 3 010000000000000B "lev" "135928"
+#showtooltip Levitate
+/cast [target=player] Levitate
+END
+VER 3 010000000000000A "life grip" "463835"
+#showtooltip Leap of Faith
+/use [@mouseover,help,nodead][help,nodead][@player] Leap of Faith
+END
+VER 3 0100000000000006 "mending" "135944"
+#showtooltip Prayer of Mending
+/use [@mouseover,help,nodead][help,nodead][@player] Prayer of Mending
+END
+VER 3 0100000000000005 "prayer of healin" "135943"
+#showtooltip Prayer of Healing
+/use [@mouseover,help,nodead][help,nodead][@player] Prayer of Healing
+END
+VER 3 0100000000000008 "purify" "135894"
+#showtooltip Purify
+/use [@mouseover,help,nodead][help,nodead][@player] Purify
+END
+VER 3 0100000000000001 "renew" "135953"
+#showtooltip Renew
+/use [@mouseover,help,nodead][help,nodead][@player] Renew
+END
+VER 3 0100000000000009 "serenity" "135937"
+#showtooltip Holy Word: Serenity
+/use [@mouseover,help,nodead][help,nodead][@player] Holy Word: Serenity
+END
+VER 3 0100000000000003 "tuure" "1137530"
+#showtooltip Light of T'uure
+/use [@mouseover,help,nodead][help,nodead][@player] Light of T'uure
+END

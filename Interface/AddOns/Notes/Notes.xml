@@ -1,0 +1,827 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+	<Script file="localization.lua"/>
+	<Script file="Notes.lua"/>
+    
+    <Button name="NotesFrameTitleButtonTemplate" virtual="true">
+        <Size>
+            <AbsDimension x="299" y="16"/>
+        </Size>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture name="$parentTodoReady" urgency="5" file="Interface\Raidframe\Readycheck-Ready" hidden="true" parentKey="ready">
+                    <Size>
+                        <AbsDimension x="16" y="16"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="LEFT">
+							<Offset>
+								<AbsDimension x="15" y="0"/>
+							</Offset>
+						</Anchor>
+                    </Anchors> 
+                </Texture>
+                <Texture name="$parentTodoNotReady" urgency="5" file="Interface\Raidframe\Readycheck-Waiting" hidden="true" parentKey="notready">
+                    <Size>
+                        <AbsDimension x="16" y="16"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="LEFT">
+							<Offset>
+								<AbsDimension x="15" y="0"/>
+							</Offset>
+						</Anchor>
+                    </Anchors>
+                </Texture>
+            </Layer>
+            <Layer level="ARTWORK">
+	            <FontString name="$parentExpandText" urgency="5" parentKey="expandText" hidden="false" inherits="GameFontNormal" text="+">
+	                    <Size>
+	                        <AbsDimension x="20" y="24"/>
+	                    </Size>
+	                    <Anchors>
+	                        <Anchor point="LEFT"/>
+	                    </Anchors> 
+	            </FontString>
+            </Layer>
+        </Layers>
+        <Scripts>
+            <OnLoad>
+                NotesFrameTitleButton_OnLoad(self);
+            </OnLoad>
+            <OnClick>
+                NotesFrameTitleButton_OnClick(self, button, down);
+            </OnClick>
+            <OnEnter>
+                NotesFrameTitleButton_OnEnter(self);
+            </OnEnter>
+            <OnLeave>
+                NotesFrameTitleButton_OnLeave(self);
+            </OnLeave>
+        </Scripts>
+        <HighlightTexture name="$parentHighlight" file="Interface\Buttons\UI-PlusButton-Hilight" alphaMode="ADD">
+            <Size>
+                <AbsDimension x="16" y="16"/>
+            </Size>
+            <Anchors>
+                <Anchor point="LEFT">
+                    <Offset>
+                        <AbsDimension x="3" y="0"/>
+                    </Offset>
+                </Anchor>
+            </Anchors>
+        </HighlightTexture>
+        <ButtonText name="$parentNormalText" nonspacewrap="true" parentKey="normalText">
+            <Size>
+                <AbsDimension x="0" y="10"/>
+            </Size>
+            <Anchors>
+                <Anchor point="LEFT">
+                    <Offset>
+                        <AbsDimension x="20" y="0"/>
+                    </Offset>
+                </Anchor>
+            </Anchors> 
+        </ButtonText>
+        <NormalFont style="GameFontNormalLeft"/>
+        <HighlightFont style="GameFontHighlightLeft"/>
+        <DisabledFont style="GameFontHighlightLeft"/>
+    </Button>
+
+    <Button name="Notes_MinimapButton" parent="Minimap" enableMouse="true" movable="true" hidden="false">
+        <Size>
+            <AbsDimension x="33" y="33"/>
+        </Size>
+        <Anchors>
+            <Anchor point="TOPLEFT"/>
+        </Anchors>
+        <Layers>
+            <Layer level="BACKGROUND">
+                <Texture file="Interface\Addons\Notes\images\frame-icon">
+                    <Size>
+                        <AbsDimension x="21" y="21"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="TOPLEFT">
+                            <Offset>
+                                <AbsDimension x="6" y="-5"/>
+                            </Offset>
+                        </Anchor>
+                    </Anchors>
+                </Texture>
+            </Layer>
+            <Layer level="OVERLAY">
+                <Texture file="Interface\Minimap\MiniMap-TrackingBorder">
+                    <Size>
+                        <AbsDimension x="56" y="56"/>
+                    </Size>
+                    <Anchors>
+                        <Anchor point="TOPLEFT"/>
+                    </Anchors>
+                </Texture>
+            </Layer>
+        </Layers>
+        <Frames>
+            <Frame name="Notes_MinimapButton_DraggingFrame" hidden="true">
+                <Scripts>
+                    <OnUpdate>
+                        Notes_MinimapButton_DraggingFrame_OnUpdate();
+                    </OnUpdate>
+                </Scripts>
+            </Frame>
+        </Frames>
+        <HighlightTexture alphaMode="ADD" file="Interface\Minimap\UI-Minimap-ZoomButton-Highlight"/>
+        <Scripts>
+            <OnLoad>
+                self:RegisterForClicks("LeftButtonUp","RightButtonUp");
+                self:RegisterForDrag("LeftButton","RightButton");       
+            </OnLoad>
+            <OnDragStart>
+                self:LockHighlight();
+                Notes_MinimapButton_DraggingFrame:Show();
+            </OnDragStart>
+            <OnDragStop>
+                self:UnlockHighlight();
+                Notes_MinimapButton_DraggingFrame:Hide();
+            </OnDragStop>
+            <OnClick>
+                NotesFrame_Toggle();
+            </OnClick>
+            <OnEnter>
+                Notes_MouseOver(self);
+            </OnEnter>
+            <OnLeave>
+                Notes_MouseOut(self);
+            </OnLeave>
+        </Scripts>
+    </Button>
+	
+	<Frame name="NotesMiniFrame" toplevel="true" enableMouse="true" parent="UIParent" hidden="true" movable="true">
+		<Size>
+			<AbsDimension x="200" y="200"/>
+		</Size>
+		<Anchors>
+			<Anchor point="TOPLEFT"/>
+		</Anchors>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture urgency="5" file="Interface\Addons\Notes\images\paper-background">
+					<Size>
+						<AbsDimension x="10" y="10"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="0" y="0"/>
+							</Offset>
+						</Anchor>
+						<Anchor point="BOTTOMRIGHT">
+							<Offset>
+								<AbsDimension x="0" y="0"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="ARTWORK">
+				<FontString name="MiniNotesFrameTitleText" inherits="GameFontBlackMedium" text="NOTES_TITLE">
+					<Size>
+						<AbsDimension x="180" y="20"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="0" y="-2"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+            <Button name="NotesMiniFrame_ToggleButton" inherits="UIPanelCloseButton">
+                <Anchors>
+                    <Anchor point="TOPRIGHT" relativePoint="TOPRIGHT">
+                        <Offset x="4" y="2"/>
+                    </Anchor>
+                </Anchors>
+                <Scripts>
+					<OnClick>
+						NotesMiniFrame_Toggle();
+					</OnClick>
+		            <OnEnter>
+		                NotesMiniFrame_ToggleButton:SetAlpha(1.0);
+		            </OnEnter>
+		            <OnLeave>
+		                NotesMiniFrame_ToggleButton:SetAlpha(0.0);
+		            </OnLeave>
+                </Scripts>
+            </Button> 
+			<Button name="NotesMiniFrame_PrevButton" inherits="UIPanelButtonTemplate" text="&lt;">
+				<Size>
+					<AbsDimension x="21" y="21"/>
+				</Size>
+				<Anchors>
+						<Anchor point="TOPRIGHT">
+							<Offset>
+								<AbsDimension x="-45" y="-3"/>
+							</Offset>
+						</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						NotesMiniFrame_Prev();
+					</OnClick>
+		            <OnEnter>
+		                NotesMiniFrame_PrevButton:SetAlpha(1.0);
+		            </OnEnter>
+		            <OnLeave>
+		                NotesMiniFrame_PrevButton:SetAlpha(0.0);
+		            </OnLeave>
+				</Scripts>
+			</Button>
+			<Button name="NotesMiniFrame_NextButton" inherits="UIPanelButtonTemplate" text="&gt;">
+				<Size>
+					<AbsDimension x="21" y="21"/>
+				</Size>
+				<Anchors>
+						<Anchor point="TOPRIGHT">
+							<Offset>
+								<AbsDimension x="-24" y="-3"/>
+							</Offset>
+						</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						NotesMiniFrame_Next();
+					</OnClick>
+		            <OnEnter>
+		                NotesMiniFrame_NextButton:SetAlpha(1.0);
+		            </OnEnter>
+		            <OnLeave>
+		                NotesMiniFrame_NextButton:SetAlpha(0.0);
+		            </OnLeave>
+				</Scripts>
+			</Button>	
+            <ScrollFrame name="MiniTextScrollFrame" inherits="UIPanelScrollFrameTemplate">
+				<Size>
+					<AbsDimension x="10" y="10"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="10" y="-25"/>
+						</Offset>
+					</Anchor>
+					<Anchor point="BOTTOMRIGHT">
+						<Offset>
+							<AbsDimension x="-10" y="10"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+                <ScrollChild>
+					<Frame name="MiniTextScrollChildFrame" enableMouse="true">
+						<Size>
+							<AbsDimension x="180" y="10"/>
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT">
+								<Offset>
+									<AbsDimension x="0" y="0"/>
+								</Offset>
+							</Anchor>
+							<Anchor point="BOTTOMRIGHT">
+								<Offset>
+									<AbsDimension x="0" y="0"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Frames>
+							<EditBox name="MiniTextBodyEditBox" letters="5000" multiLine="true" enableMouse="true" autoFocus="false">
+								<Size>
+									<AbsDimension x="10" y="10"/>
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT">
+										<Offset>
+											<AbsDimension x="0" y="0"/>
+										</Offset>
+									</Anchor>
+									<Anchor point="BOTTOMRIGHT">
+										<Offset>
+											<AbsDimension x="0" y="0"/>
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<FontString inherits="GameFontBlack"/>
+								<Scripts>
+                                    <OnTextChanged>
+                                        ScrollingEdit_OnTextChanged(self, self:GetParent():GetParent());
+                                    </OnTextChanged>
+                                    <OnCursorChanged>
+                                        ScrollingEdit_OnCursorChanged(self, x, y-10, w, h);
+                                    </OnCursorChanged>
+									<OnUpdate>
+										ScrollingEdit_OnUpdate(self, elapsed, self:GetParent():GetParent());
+									</OnUpdate>
+                                    <OnEscapePressed function="EditBox_ClearFocus"/>
+								</Scripts>
+							</EditBox>
+						</Frames>
+					</Frame>
+                </ScrollChild>
+            </ScrollFrame>
+		</Frames>	
+		<Scripts>
+			<OnMouseDown function="Notes_MiniFrame_OnMouseDown"/>
+			<OnMouseUp function="Notes_MiniFrame_OnMouseUp"/>
+	        <OnLoad>
+	        	Notes_StartDelay(1, NotesMiniFrame_Init);
+	        </OnLoad>
+		</Scripts>
+	</Frame>
+		
+	<Frame name="NotesFrame" toplevel="true" enableMouse="true" parent="UIParent" hidden="true" movable="true">
+		<Size>
+			<AbsDimension x="682" y="447"/>
+		</Size>
+		<Anchors>
+			<Anchor point="TOPLEFT"/>
+		</Anchors>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture urgency="5" file="Interface\Addons\Notes\images\frame-icon">
+					<Size>
+						<AbsDimension x="64" y="64"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="3" y="-4"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</Texture>
+			</Layer>
+			<Layer level="BORDER">
+				<Texture urgency="5" file="Interface\QuestFrame\UI-QuestLogDualPane-Left">
+					<Size>
+						<AbsDimension x="512" y="445"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT"/>
+					</Anchors>
+					<TexCoords left="0.0" right="1.0" top="0.0" bottom="0.86914"/>
+				</Texture>		
+				<Texture urgency="5" file="Interface\QuestFrame\UI-QuestLogDualPane-RIGHT">
+					<Size>
+						<AbsDimension x="170" y="445"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPRIGHT"/>
+					</Anchors>
+					<TexCoords left="0.0" right="0.6640625" top="0.0" bottom="0.86914"/>
+				</Texture>
+			</Layer>
+			<Layer level="ARTWORK">
+				<FontString name="NotesFrameTitleText" inherits="GameFontNormal" text="NOTES_TITLE">
+					<Size>
+						<AbsDimension x="300" y="14"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOP">
+							<Offset>
+								<AbsDimension x="0" y="-15"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Frames>
+			<Button name="NotesFrameCloseButton" inherits="UIPanelCloseButton">
+				<Anchors>
+					<Anchor point="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="2" y="-8"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<Button name="NotesFrameCancelButton" inherits="UIPanelButtonTemplate" text="CLOSE">
+				<Size>
+					<AbsDimension x="80" y="22"/>
+				</Size>
+				<Anchors>
+					<Anchor point="BOTTOMRIGHT">
+						<Offset>
+							<AbsDimension x="-7" y="13"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						HideUIPanel(NotesFrame);
+					</OnClick>
+				</Scripts>
+			</Button>
+
+			<Button name="NotesFrameCreateNoteButton" inherits="UIPanelButtonTemplate" text="NOTES_NEW">
+				<Size>
+					<AbsDimension x="85" y="21"/>
+				</Size>
+				<Anchors>
+					<Anchor point="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="18" y="14"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						NotesFrame_CreateNote();
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="NotesFrameCopyNoteButton" inherits="UIPanelButtonTemplate" text="NOTES_COPY">
+				<Size>
+					<AbsDimension x="85" y="21"/>
+				</Size>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="NotesFrameCreateNoteButton" relativePoint="RIGHT"/>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						NotesFrame_CopyNote();
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="NotesFrameDeleteNoteButton" inherits="UIPanelButtonTemplate" text="NOTES_DELETE">
+				<Size>
+					<AbsDimension x="85" y="21"/>
+				</Size>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="NotesFrameCopyNoteButton" relativePoint="RIGHT"/>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						NotesFrame_DeleteNote();
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="NotesFrameSendNoteButton" inherits="UIPanelButtonTemplate" text="NOTES_SEND">
+				<Size>
+					<AbsDimension x="85" y="21"/>
+				</Size>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="NotesFrameDeleteNoteButton" relativePoint="RIGHT"/>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						NotesFrame_SendNote();
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="NotesFrameRedoButton" inherits="UIPanelButtonTemplate" text="redo">
+				<Size>
+					<AbsDimension x="45" y="21"/>
+				</Size>
+				<Anchors>
+					<Anchor point="RIGHT" relativeTo="NotesFrameCancelButton" relativePoint="LEFT">
+						<Offset>
+							<AbsDimension x="-75" y="0"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						NotesFrame_Redo();
+					</OnClick>
+				</Scripts>
+			</Button>
+			<Button name="NotesFrameUndoButton" inherits="UIPanelButtonTemplate" text="undo">
+				<Size>
+					<AbsDimension x="45" y="21"/>
+				</Size>
+				<Anchors>
+					<Anchor point="RIGHT" relativeTo="NotesFrameRedoButton" relativePoint="LEFT"/>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						NotesFrame_Undo();
+					</OnClick>
+				</Scripts>
+			</Button>
+
+            <Frame name="NotesFrameSendToMenu" inherits="UIMenuTemplate" hidden="true" parent="NotesFrameSendNoteButton">
+                <Anchors>
+                    <Anchor point="BOTTOMLEFT" relativeTo="NotesFrameSendNoteButton" relativePoint="TOPLEFT"/>
+                </Anchors>
+                <Scripts>
+                    <OnLoad function="NotesFrameSendToMenu_OnLoad"/>
+                </Scripts>
+            </Frame>
+			
+			<Frame name="EmptyNotesFrame" hidden="true">
+				<Size>
+					<AbsDimension x="302" y="356"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="19" y="-73"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture name="$parentBackgroundTopLeft" urgency="5" file="Interface\QuestFrame\UI-QuestLog-Empty-TopLeft">
+							<Size x="256" y="256"/>
+							<Anchors>
+								<Anchor point="TOPLEFT"/>
+							</Anchors>
+							<TexCoords left="0.0" right="1.0" top="0.0" bottom="1.0"/>
+						</Texture>
+						<Texture name="$parentBackgroundBottomLeft" urgency="5" file="Interface\QuestFrame\UI-QuestLog-Empty-BotLeft">
+							<Size x="256" y="106"/>
+							<Anchors>
+								<Anchor point="BOTTOMLEFT"/>
+								<Anchor point="TOPRIGHT" relativeTo="$parentBackgroundTopLeft" relativePoint="BOTTOMRIGHT"/>
+							</Anchors>
+							<TexCoords left="0.0" right="1.0" top="0.0" bottom="0.828125"/>
+						</Texture>
+						<Texture name="$parentBackgroundTopRight" urgency="5" file="Interface\QuestFrame\UI-QuestLog-Empty-TopRight">
+							<Size x="46" y="256"/>
+							<Anchors>
+								<Anchor point="TOPRIGHT"/>
+								<Anchor point="BOTTOMLEFT" relativeTo="$parentBackgroundTopLeft" relativePoint="BOTTOMRIGHT"/>
+							</Anchors>
+							<TexCoords left="0.0" right="0.71875" top="0.0" bottom="1.0"/>
+						</Texture>
+						<Texture name="$parentBackgroundBottomRight" urgency="5" file="Interface\QuestFrame\UI-QuestLog-Empty-BotRight">
+							<Size x="46" y="106"/>
+							<Anchors>
+								<Anchor point="BOTTOMRIGHT"/>
+								<Anchor point="TOPLEFT" relativeTo="$parentBackgroundTopLeft" relativePoint="BOTTOMRIGHT"/>
+							</Anchors>
+							<TexCoords left="0.0" right="0.71875" top="0.0" bottom="0.828125"/>
+						</Texture>
+					</Layer>
+					<Layer level="ARTWORK">
+						<FontString name="NotesFrameNoQuestsText" inherits="GameFontHighlight" text="NOTES_NO_NOTES_TEXT">
+							<Size>
+								<AbsDimension x="200" y="0"/>
+							</Size>
+							<Anchors>
+								<Anchor point="CENTER">
+									<Offset>
+										<AbsDimension x="-6" y="16"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+			</Frame>
+			
+			<Frame name="ConfigNotesFrame" hidden="true">
+		        <Size x="600" y="40"/>
+				<Anchors>
+                    <Anchor point="TOPLEFT">
+                        <Offset>
+                            <AbsDimension x="75" y="-32"/>
+                        </Offset>
+                    </Anchor>
+				</Anchors>
+				<Frames>
+			
+                    <Frame name="Notes_AddInfoDropDown" inherits="UIDropDownMenuTemplate">
+                        <Size>
+                            <AbsDimension x="150" y="24"/>
+                        </Size>
+                        <Anchors>
+                            <Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT">
+                                <Offset>
+                                    <AbsDimension x="0" y="-8"/>
+                                </Offset>
+                            </Anchor>
+                        </Anchors>
+                        <Scripts>
+                            <OnLoad>
+                                UIDropDownMenu_Initialize(self, Note_AddQuestInfoDropDown_Initialize);
+                            </OnLoad>
+                        </Scripts>
+                    </Frame>
+				
+                    <Button name="Notes_AddInfo" inherits="UIPanelButtonTemplate" text="NOTES_ADD">
+                        <Size>
+                            <AbsDimension x="40" y="26"/>
+                        </Size>
+                        <Anchors>
+                            <Anchor point="TOPLEFT" relativeTo="Notes_AddInfoDropDown" relativePoint="TOPRIGHT">
+                                <Offset>
+                                    <AbsDimension x="2" y="0"/>
+                                </Offset>
+                            </Anchor>
+                        </Anchors>
+                        <Scripts>
+                            <OnClick>
+                                NotesFrame_AddInfo();
+                            </OnClick>
+                        </Scripts>
+                    </Button>
+			
+                    <Frame name="Notes_TypeDropDown" inherits="UIDropDownMenuTemplate">
+                        <Size>
+                            <AbsDimension x="200" y="20"/>
+                        </Size>
+                        <Anchors>
+                            <Anchor point="TOPRIGHT" relativeTo="$parent" relativePoint="TOPRIGHT">
+                                <Offset>
+                                    <AbsDimension x="50" y="-8"/>
+                                </Offset>
+                            </Anchor>
+                        </Anchors>
+                        <Layers>
+                            <Layer level="ARTWORK">
+                                <FontString name="$parent_label" text="foo" inherits="GameFontNormalLeft" nonspacewrap="true" maxLines="1" justifyH="LEFT" justifyV="TOP">
+                                    <Anchors>
+                                        <Anchor point="RIGHT" relativeTo="$parent" relativePoint="LEFT">
+                                            <Offset>
+                                                <AbsDimension x="0" y="3"/>
+                                            </Offset>
+                                        </Anchor>
+                                    </Anchors>
+                                </FontString>
+                            </Layer>
+                        </Layers>
+                        <Scripts>
+                            <OnLoad>
+                                Notes_TypeDropDown_label:SetText(NOTES_TYPE);
+                                UIDropDownMenu_Initialize(self, Note_TypeDropDown_Initialize);
+                            </OnLoad>
+                        </Scripts>
+                    </Frame>
+                    
+				</Frames>
+			</Frame>
+			
+			<Frame name="EditNotesFrame" hidden="true">
+		        <Size x="295" y="336"/>
+				<Anchors>
+                    <Anchor point="TOPRIGHT">
+                        <Offset>
+                            <AbsDimension x="-32" y="-74"/>
+                        </Offset>
+                    </Anchor>
+				</Anchors>
+                <Layers>
+                    <Layer level="ARTWORK">
+                        <FontString name="$parent_max" text="" inherits="GameFontHighlightSmall" nonspacewrap="true" maxLines="1" justifyH="RIGHT" justifyV="TOP">
+                            <Anchors>
+                                <Anchor point="RIGHT" relativeTo="NotesFrameCancelButton" relativePoint="LEFT">
+                                    <Offset>
+                                        <AbsDimension x="-5" y="0"/>
+                                    </Offset>
+                                </Anchor>
+                            </Anchors>
+                        </FontString>
+                    </Layer>
+                </Layers>
+				<Frames>
+			
+                    <ScrollFrame name="TextScrollFrame" inherits="UIPanelScrollFrameTemplate">
+                        <Anchors>
+                            <Anchor point="TOPLEFT">
+                            <Offset>
+                                <AbsDimension x="0" y="-10"/>
+                            </Offset>
+                        </Anchor>
+                        <Anchor point="BOTTOMRIGHT">
+                            <Offset>
+                                <AbsDimension x="0" y="10"/>
+                            </Offset>
+                        </Anchor>
+                        </Anchors>
+                        <ScrollChild>
+							<Frame name="TextScrollChildFrame" enableMouse="true">
+								<Size>
+									<AbsDimension x="290" y="330"/>
+								</Size>
+								<Anchors>
+									<Anchor point="TOPLEFT">
+										<Offset>
+											<AbsDimension x="0" y="0"/>
+										</Offset>
+									</Anchor>
+								</Anchors>
+								<Frames>
+									<EditBox name="TextBodyEditBox" letters="5000" multiLine="true" enableMouse="true" autoFocus="false">
+										<Size>
+											<AbsDimension x="260" y="300"/>
+										</Size>
+										<Anchors>
+											<Anchor point="TOPLEFT">
+												<Offset>
+													<AbsDimension x="10" y="-10"/>
+												</Offset>
+											</Anchor>
+										</Anchors>
+										<Scripts>
+											<OnTextChanged>
+												ScrollingEdit_OnTextChanged(self, self:GetParent():GetParent());
+												Notes_OnTextChanged();
+											</OnTextChanged>
+											<OnCursorChanged>
+												ScrollingEdit_OnCursorChanged(self, x, y-10, w, h);
+												Notes_DetectLink();
+											</OnCursorChanged>
+											<OnUpdate>
+												ScrollingEdit_OnUpdate(self, elapsed, self:GetParent():GetParent());
+											</OnUpdate>
+                                            <OnReceiveDrag function="Notes_OnReceiveDrag"/>
+											<OnEscapePressed function="EditBox_ClearFocus"/>
+										</Scripts>
+										<FontString inherits="GameFontBlack"/>
+									</EditBox>
+								</Frames>
+								<Scripts>
+									<OnMouseUp>
+										TextBodyEditBox:SetFocus();
+									</OnMouseUp> 
+                                    <OnReceiveDrag function="Notes_OnReceiveDrag"/>
+								</Scripts>
+							</Frame>
+                        </ScrollChild>
+                    </ScrollFrame>
+                    
+				</Frames>
+			</Frame>
+			
+			<ScrollFrame name="NotesFrameScrollFrame" inherits="HybridScrollFrameTemplate">
+				<Size>
+					<AbsDimension x="305" y="335"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="19" y="-75"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Frames>
+					<Slider name="$parentScrollBar" inherits="HybridScrollBarTemplate" parentKey="scrollBar">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativePoint="TOPRIGHT">
+								<Offset x="0" y="-13"/>
+							</Anchor>
+							<Anchor point="BOTTOMLEFT" relativePoint="BOTTOMRIGHT">
+								<Offset x="0" y="14"/>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>
+								local name = self:GetName();
+								_G[name.."BG"]:Hide();
+								_G[name.."Top"]:Hide();
+								_G[name.."Bottom"]:Hide();
+								_G[name.."Middle"]:Hide();
+								self.doNotHide = true;
+							</OnLoad>
+						</Scripts>
+					</Slider>
+					<Frame name="NotesFrameHighlightFrame" hidden="true">
+						<Anchors>
+							<Anchor point="TOPLEFT"/>
+							<Anchor point="BOTTOMRIGHT"/>
+						</Anchors>
+						<Layers>
+							<Layer level="ARTWORK">
+								<Texture name="NotesFrameSkillHighlight" file="Interface\QuestFrame\UI-QuestLogTitleHighlight" alphaMode="ADD"/>
+							</Layer>
+						</Layers>
+						<Scripts>
+							<OnLoad>
+								self:SetParent(nil);
+							</OnLoad>
+						</Scripts>
+					</Frame>
+				</Frames>
+				<Scripts>
+					<OnLoad function="NotesFrameScrollFrame_OnLoad"/>
+		            <OnMouseWheel>
+		                HybridScrollFrame_OnMouseWheel(self, delta);
+		            </OnMouseWheel>
+				</Scripts>
+			</ScrollFrame>
+		</Frames>
+		<Scripts>
+			<OnEvent function="Notes_OnEvent"/>
+			<OnLoad function="Notes_OnLoad"/>
+			<OnUpdate function="Notes_OnUpdate"/>
+			<OnShow function="Notes_TitlesOnUpdate"/>
+			<OnMouseDown function="Notes_OnMouseDown"/>
+			<OnMouseUp function="Notes_OnMouseUp"/>
+		</Scripts>
+	</Frame>
+</Ui>

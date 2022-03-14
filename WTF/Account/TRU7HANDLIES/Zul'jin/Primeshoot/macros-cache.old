@@ -1,0 +1,41 @@
+VER 3 0100000000000006 " " "INV_Misc_QuestionMark"
+#showtooltip Binding Shot
+/click [btn:1]MTSB121 LeftButton;[btn:2]MTSB121 RightButton;[btn:3]MTSB121 MiddleButton;[btn:4]MTSB121 Button4;[btn:5]MTSB121 Button5
+END
+VER 3 0100000000000002 " " "461114"
+#showtooltip Cobra Shot
+/petattack
+/cast Cobra Shot
+END
+VER 3 0100000000000001 " " "132176"
+#showtooltip Kill Command
+/petattack
+/cast Kill Command
+END
+VER 3 0100000000000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Multi-Shot
+/petattack
+/cast Multi-Shot
+END
+VER 3 0100000000000005 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Spirit Mend
+/cast [@player] Spirit Mend
+END
+VER 3 0100000000000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Flare
+/cast [@cursor] Flare
+END
+VER 3 0100000000000008 " " "132111"
+/target Jormog The Behemoth
+/cast Intimidation
+/targetlasttarget
+END
+VER 3 0100000000000009 " " "136061"
+/target [exists,nodead] Fel Surge Totem
+/cast Cobra Shot
+/targetlasttarget
+END
+VER 3 0100000000000007 "assist toggle" "524348"
+/petattack [pet,nomodifier]
+/petfollow [pet,modifier]
+END

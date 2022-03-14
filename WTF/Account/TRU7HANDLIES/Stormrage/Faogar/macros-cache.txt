@@ -1,0 +1,12 @@
+VER 3 0100000000000001 " " "136094"
+#showtooltip Survival of the Fittest
+/cast Survival of the Fittest
+END
+VER 3 0100000000000003 " " "132152"
+/petfollow [@pettarget,exists]
+/petattack [@pettarget,noexists]
+END
+VER 3 0100000000000002 " " "136012"
+#showtooltip Primal Rage
+/cast Primal Rage
+END

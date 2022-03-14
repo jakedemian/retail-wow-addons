@@ -1,0 +1,32 @@
+VER 3 0100000000000001 " " "136094"
+#showtooltip Survival of the Fittest
+/cast Survival of the Fittest
+END
+VER 3 0100000000000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Volley
+/cast [@cursor] Volley
+END
+VER 3 0100000000000005 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Flare
+/cast [@cursor] Flare
+END
+VER 3 0100000000000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Binding Shot
+/cast [@cursor] Binding Shot
+END
+VER 3 0100000000000007 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Freezing Trap
+/cast [@cursor] Freezing Trap
+END
+VER 3 0100000000000008 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Tar Trap
+/cast [@cursor] Tar Trap
+END
+VER 3 0100000000000003 " " "132152"
+/petfollow [@pettarget,exists]
+/petattack [@pettarget,noexists]
+END
+VER 3 0100000000000002 " " "136012"
+#showtooltip Primal Rage
+/cast Primal Rage
+END

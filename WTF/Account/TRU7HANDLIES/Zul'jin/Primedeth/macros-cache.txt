@@ -1,0 +1,6 @@
+VER 3 0100000000000001 "cd opener" "132352"
+/cast Ancestral Call
+/cast Pillar of Frost
+/cast Raise Dead
+/cast Empower Rune Weapon
+END

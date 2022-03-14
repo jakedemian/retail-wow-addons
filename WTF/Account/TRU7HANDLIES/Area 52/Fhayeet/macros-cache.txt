@@ -1,0 +1,4 @@
+VER 3 0100000000000001 " travel" "ABILITY_DRUID_TRAVELFORM"
+#showtooltip Travel Form
+/cast [swimming,nocombat] [outdoors,nocombat] Travel Form; Cat Form
+END

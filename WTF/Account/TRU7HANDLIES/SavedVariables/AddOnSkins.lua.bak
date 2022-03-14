@@ -1,0 +1,53 @@
+
+AddOnSkinsDB = {
+	["profileKeys"] = {
+		["Primelocker - Zul'jin"] = "Default",
+		["Primeage - Stormrage"] = "Default",
+		["Primecast - Zul'jin"] = "Default",
+		["Rotrin - Area 52"] = "Default",
+		["Tethock - Stormrage"] = "Default",
+		["Grabbahan - Moon Guard"] = "Default",
+		["Fhayslam - Area 52"] = "Default",
+		["Primeslam - Stormrage"] = "Default",
+		["Faogar - Stormrage"] = "Default",
+		["Primedrood - Stormrage"] = "Default",
+		["Primeslam - Zul'jin"] = "Default",
+		["Peepeesmalls - Stormrage"] = "Default",
+		["Primedeath - Stormrage"] = "Default",
+		["Primepunch - Zul'jin"] = "Default",
+		["Primadin - Stormrage"] = "Default",
+		["Dulgan - Kilrogg"] = "Default",
+		["Primesham - Stormrage"] = "Default",
+		["Primepal - Zul'jin"] = "Default",
+		["Primeslay - Zul'jin"] = "Default",
+		["Primesham - Zul'jin"] = "Default",
+		["Primerlock - Stormrage"] = "Default",
+		["Plskillme - Kilrogg"] = "Default",
+		["Primepriest - Zul'jin"] = "Default",
+		["Primeshoot - Zul'jin"] = "Default",
+		["Primestab - Zul'jin"] = "Default",
+		["Primedeth - Zul'jin"] = "Default",
+		["Primehunt - Stormrage"] = "Default",
+		["Fhdgshsfnsdf - Zul'jin"] = "Default",
+		["Primestab - Stormrage"] = "Default",
+		["Primepaladin - Zul'jin"] = "Default",
+		["Primedrood - Zul'jin"] = "Default",
+		["Diuhreeuh - Area 52"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["ArkInventory"] = false,
+			["DBMSkinHalf"] = true,
+			["Altoholic"] = false,
+			["RCLootCouncil"] = false,
+			["EmbedLeftWidth"] = 265,
+			["AAP-Core"] = false,
+			["EmbedSystemDual"] = true,
+			["Bartender4"] = false,
+		},
+	},
+}
+AddOnSkinsDS = {
+	[4.58] = {
+	},
+}

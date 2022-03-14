@@ -1,0 +1,19 @@
+
+DBT_AllPersistentOptions = {
+	["Default"] = {
+		["DBM"] = {
+			["HugeTimerY"] = -230.8081970214844,
+			["HugeBarYOffset"] = 13,
+			["BarYOffset"] = 13,
+			["Width"] = 238,
+			["TimerY"] = 259.0440673828125,
+			["HugeTimerX"] = 33.57159805297852,
+			["HugeWidth"] = 181,
+			["TimerX"] = 31.54068756103516,
+			["Height"] = 27,
+			["HugeScale"] = 2,
+			["HugeTimerPoint"] = "CENTER",
+			["TimerPoint"] = "BOTTOM",
+		},
+	},
+}

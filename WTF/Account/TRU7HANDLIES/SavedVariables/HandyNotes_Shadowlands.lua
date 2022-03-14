@@ -1,0 +1,36 @@
+
+HandyNotes_ShadowlandsDB = {
+	["profileKeys"] = {
+		["Fhdgshsfnsdf - Zul'jin"] = "Default",
+		["Primecast - Zul'jin"] = "Default",
+		["Primesham - Zul'jin"] = "Default",
+		["Primepunch - Zul'jin"] = "Default",
+		["Primedrood - Stormrage"] = "Default",
+		["Primeshoot - Zul'jin"] = "Default",
+		["Primepriest - Zul'jin"] = "Default",
+		["Primeslay - Zul'jin"] = "Default",
+		["Diuhreeuh - Area 52"] = "Default",
+		["Primeage - Stormrage"] = "Default",
+		["Dulgan - Kilrogg"] = "Default",
+		["Primeslam - Zul'jin"] = "Default",
+		["Primepal - Zul'jin"] = "Default",
+		["Grabbahan - Moon Guard"] = "Default",
+		["Primedeth - Zul'jin"] = "Default",
+		["Primehunt - Stormrage"] = "Default",
+		["Primestab - Zul'jin"] = "Default",
+		["Primelocker - Zul'jin"] = "Default",
+		["Primepaladin - Zul'jin"] = "Default",
+		["Primestab - Stormrage"] = "Default",
+		["Primedrood - Zul'jin"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["icon_display_korthia_dailies"] = false,
+			["icon_display_relic"] = true,
+			["icon_display_rift_portal"] = true,
+			["icon_display_rares"] = true,
+			["icon_display_treasures"] = true,
+			["icon_display_misc"] = true,
+		},
+	},
+}

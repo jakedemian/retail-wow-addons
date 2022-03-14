@@ -1,0 +1,14 @@
+## Interface: 90105
+## Title: Notes
+## Author: Seharad
+## Version: 9.1.1
+## Notes: create and manage text notes ingame in a questlog like frame
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariables: NotesData
+
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+libs\LibDataBroker-1.1\LibDataBroker-1.1.lua
+
+Notes.xml

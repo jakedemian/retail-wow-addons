@@ -1,0 +1,98 @@
+
+TomTomDB = {
+	["profileKeys"] = {
+		["Fhdgshsfnsdf - Zul'jin"] = "Default",
+		["Diuhreeuh - Area 52"] = "Default",
+		["Primecast - Zul'jin"] = "Default",
+		["Primestab - Zul'jin"] = "Default",
+		["Primesham - Zul'jin"] = "Default",
+		["Primepunch - Zul'jin"] = "Default",
+		["Primepaladin - Zul'jin"] = "Default",
+		["Primeslay - Zul'jin"] = "Default",
+		["Primepal - Zul'jin"] = "Default",
+		["Primedeth - Zul'jin"] = "Default",
+		["Primelocker - Zul'jin"] = "Default",
+		["Primadin - Stormrage"] = "Default",
+		["Primeshoot - Zul'jin"] = "Default",
+		["Primeslam - Zul'jin"] = "Default",
+		["Primepriest - Zul'jin"] = "Default",
+		["Primedrood - Zul'jin"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["arrow"] = {
+				["position"] = {
+					"LEFT", -- [1]
+					nil, -- [2]
+					"LEFT", -- [3]
+					240.5380401611328, -- [4]
+					-91.69601440429688, -- [5]
+				},
+			},
+			["block"] = {
+				["position"] = {
+					"RIGHT", -- [1]
+					nil, -- [2]
+					"RIGHT", -- [3]
+					-102.5158767700195, -- [4]
+					319.18115234375, -- [5]
+				},
+			},
+		},
+	},
+}
+TomTomWaypoints = nil
+TomTomWaypointsM = {
+	["profileKeys"] = {
+		["Fhdgshsfnsdf - Zul'jin"] = "Fhdgshsfnsdf - Zul'jin",
+		["Diuhreeuh - Area 52"] = "Diuhreeuh - Area 52",
+		["Primecast - Zul'jin"] = "Primecast - Zul'jin",
+		["Primestab - Zul'jin"] = "Primestab - Zul'jin",
+		["Primesham - Zul'jin"] = "Primesham - Zul'jin",
+		["Primepunch - Zul'jin"] = "Primepunch - Zul'jin",
+		["Primepaladin - Zul'jin"] = "Primepaladin - Zul'jin",
+		["Primeslay - Zul'jin"] = "Primeslay - Zul'jin",
+		["Primepal - Zul'jin"] = "Primepal - Zul'jin",
+		["Primedeth - Zul'jin"] = "Primedeth - Zul'jin",
+		["Primelocker - Zul'jin"] = "Primelocker - Zul'jin",
+		["Primadin - Stormrage"] = "Primadin - Stormrage",
+		["Primeshoot - Zul'jin"] = "Primeshoot - Zul'jin",
+		["Primeslam - Zul'jin"] = "Primeslam - Zul'jin",
+		["Primepriest - Zul'jin"] = "Primepriest - Zul'jin",
+		["Primedrood - Zul'jin"] = "Primedrood - Zul'jin",
+	},
+	["profiles"] = {
+		["Fhdgshsfnsdf - Zul'jin"] = {
+		},
+		["Diuhreeuh - Area 52"] = {
+		},
+		["Primecast - Zul'jin"] = {
+		},
+		["Primestab - Zul'jin"] = {
+		},
+		["Primesham - Zul'jin"] = {
+		},
+		["Primepunch - Zul'jin"] = {
+		},
+		["Primepaladin - Zul'jin"] = {
+		},
+		["Primeslay - Zul'jin"] = {
+		},
+		["Primepal - Zul'jin"] = {
+		},
+		["Primedeth - Zul'jin"] = {
+		},
+		["Primelocker - Zul'jin"] = {
+		},
+		["Primadin - Stormrage"] = {
+		},
+		["Primeshoot - Zul'jin"] = {
+		},
+		["Primeslam - Zul'jin"] = {
+		},
+		["Primepriest - Zul'jin"] = {
+		},
+		["Primedrood - Zul'jin"] = {
+		},
+	},
+}

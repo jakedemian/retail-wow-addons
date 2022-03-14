@@ -1,0 +1,101 @@
+
+PawnOptions = {
+	["LastVersion"] = 2.0246,
+	["ItemLevels"] = {
+		{
+			["ID"] = 122248,
+			["Level"] = 31,
+			["Link"] = "|cff00ccff|Hitem:122248::::::::27:259:::1:3592:::|h[Stained Shadowcraft Cap]|h|r",
+		}, -- [1]
+		{
+			["ID"] = 122668,
+			["Level"] = 31,
+			["Link"] = "|cff00ccff|Hitem:122668::::::::27:259:::1:582:::|h[Eternal Will of the Martyr]|h|r",
+		}, -- [2]
+		{
+			["ID"] = 122358,
+			["Level"] = 31,
+			["Link"] = "|cff00ccff|Hitem:122358::::::::27:259:::1:3592:::|h[Stained Shadowcraft Spaulders]|h|r",
+		}, -- [3]
+		nil, -- [4]
+		{
+			["ID"] = 122383,
+			["Level"] = 31,
+			["Link"] = "|cff00ccff|Hitem:122383::::::::27:259:::1:3592:::|h[Stained Shadowcraft Tunic]|h|r",
+		}, -- [5]
+		{
+			["ID"] = 151424,
+			["Level"] = 27,
+			["Link"] = "|cff0070dd|Hitem:151424::::::::25:259:512:1:1:4032:21:::|h[Belt of Boundless Fury]|h|r",
+		}, -- [6]
+		{
+			["ID"] = 122254,
+			["Level"] = 31,
+			["Link"] = "|cff00ccff|Hitem:122254::::::::27:259:::1:3592:::|h[Stained Shadowcraft Pants]|h|r",
+		}, -- [7]
+		{
+			["ID"] = 157715,
+			["Level"] = 25,
+			["Link"] = "|cff1eff00|Hitem:157715::::::::25:259::::::|h[Nimblefinger Boots]|h|r",
+		}, -- [8]
+		{
+			["ID"] = 157721,
+			["Level"] = 25,
+			["Link"] = "|cff1eff00|Hitem:157721::::::::25:259::::::|h[Nimblefinger Bindings]|h|r",
+		}, -- [9]
+		{
+			["ID"] = 51965,
+			["Level"] = 28,
+			["Link"] = "|cff0070dd|Hitem:51965::::::::25:259:512:17:2:1708:4244:22:::|h[Vigorous Handguards of the Aurora]|h|r",
+		}, -- [10]
+		{
+			["ID"] = 65712,
+			["Level"] = 23,
+			["AlsoFitsIn"] = 12,
+			["Link"] = "|cff1eff00|Hitem:65712::::::::25:259:512:11:1:3642:23:::|h[Citizen Wilkes' Ring]|h|r",
+		}, -- [11]
+		{
+			["ID"] = 65712,
+			["Level"] = 23,
+			["AlsoFitsIn"] = 11,
+			["Link"] = "|cff1eff00|Hitem:65712::::::::26:259:512:11:1:3642:23:::|h[Citizen Wilkes' Ring]|h|r",
+		}, -- [12]
+		{
+			["ID"] = 122361,
+			["Level"] = 31,
+			["AlsoFitsIn"] = 14,
+			["Link"] = "|cff00ccff|Hitem:122361::::::::27:259::::::|h[Swift Hand of Justice]|h|r",
+		}, -- [13]
+		{
+			["ID"] = 122530,
+			["Level"] = 31,
+			["AlsoFitsIn"] = 13,
+			["Link"] = "|cff00ccff|Hitem:122530::::::::27:259::::::|h[Inherited Mark of Tyranny]|h|r",
+		}, -- [14]
+		{
+			["ID"] = 122261,
+			["Level"] = 31,
+			["Link"] = "|cff00ccff|Hitem:122261::::::::27:259:::1:3592:::|h[Inherited Cape of the Black Baron]|h|r",
+		}, -- [15]
+		{
+			["ID"] = 122364,
+			["Level"] = 31,
+			["AlsoFitsIn"] = 17,
+			["Link"] = "|cff00ccff|Hitem:122364::::::::27:259:::1:582:::|h[Sharpened Scarlet Kris]|h|r",
+		}, -- [16]
+		{
+			["ID"] = 122364,
+			["Level"] = 30,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cff00ccff|Hitem:122364::::::::26:259:::1:582:::|h[Sharpened Scarlet Kris]|h|r",
+		}, -- [17]
+	},
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastPlayerFullName"] = "Iamprime-Area 52",
+	["LastKeybindingsSet"] = 1,
+}
+PawnMrRobotScaleProviderOptions = {
+	["LastClass"] = "ROGUE",
+	["LastAdded"] = 1,
+}

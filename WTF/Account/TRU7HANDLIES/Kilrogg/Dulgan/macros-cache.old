@@ -1,0 +1,4 @@
+VER 3 0100000000000001 "ss" "136210"
+#showtooltip Soulstone
+/use [@mouseover,help,nodead][help,nodead][@player] Soulstone
+END

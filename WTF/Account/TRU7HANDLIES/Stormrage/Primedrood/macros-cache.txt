@@ -1,0 +1,11 @@
+VER 3 0100000000000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Efflorescence
+/cast [@cursor] Efflorescence
+END
+VER 3 0100000000000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Wild Growth
+/cast [nomod,@mouseover,exists,nodead]Wild Growth;[nomod]Wild Growth; 
+END
+VER 3 0100000000000001 " " "INV_MISC_QUESTIONMARK"
+/castsequence Moonfire, Sunfire, Starsurge
+END

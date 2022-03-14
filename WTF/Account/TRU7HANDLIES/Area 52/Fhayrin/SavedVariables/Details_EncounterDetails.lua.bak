@@ -1,0 +1,13 @@
+
+EncounterDetailsDB = {
+	["encounter_spells"] = {
+	},
+	["emotes"] = {
+		{
+			["boss"] = "Anzu",
+		}, -- [1]
+		{
+			["boss"] = "Darkweaver Syth",
+		}, -- [2]
+	},
+}

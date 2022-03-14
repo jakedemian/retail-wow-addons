@@ -1,0 +1,37 @@
+VER 3 0100000000000009 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Power Infusion
+/cast [nomod,@mouseover,exists,nodead] Power Infusion;[nomod,@target,exists,nodead] Power Infusion;
+END
+VER 3 0100000000000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Shadow Word: Pain
+/cast [nomod,@mouseover,exists,nodead] Power Word: Shield;[nomod,@target,exists,nodead] Shadow Word: Pain;
+END
+VER 3 0100000000000007 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Void Eruption
+/cast [nomod,@mouseover,exists,nodead] Purify Disease; [nomod,@target,exists,nodead] Void Eruption;
+END
+VER 3 0100000000000005 " " "INV_MISC_QUESTIONMARK"
+#showtoolti Vampiric Touch
+/cast [nomod,@mouseover,exists,nodead]Shadow Mend;[nomod,@target,exists,nodead]Vampiric Touch;
+END
+VER 3 0100000000000008 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Mass Dispel
+/cast [@cursor] Mass Dispel;
+END
+VER 3 010000000000000B " " "INV_MISC_QUESTIONMARK"
+#showtooltip Levitate
+/cast Levitate
+/cancelaura Levitate
+END
+VER 3 010000000000000A " opener" "1386550"
+/castsequence reset=combat/10 Vampiric Touch, Empyreal Ordnance, Shadow Word: Pain, Void Torrent, Devouring Plague, Void Eruption, Power Infusion, Void Bolt
+END
+VER 3 0100000000000004 "dispersion" "INV_MISC_QUESTIONMARK"
+#showtooltip Dispersion
+/cast Dispersion
+/cancelaura Dispersion
+END
+VER 3 0100000000000003 "shadow crash" "INV_MISC_QUESTIONMARK"
+#showtooltip Shadow Crash
+/cast [@cursor] Shadow Crash
+END

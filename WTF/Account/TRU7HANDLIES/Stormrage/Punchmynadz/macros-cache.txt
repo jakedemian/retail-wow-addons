@@ -1,0 +1,28 @@
+VER 3 0100000000000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Liquid Magma Totem
+/cast [@cursor] Liquid Magma Totem
+END
+VER 3 0100000000000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Earthen Wall Totem
+/cast [@cursor] Earthen Wall Totem
+END
+VER 3 0100000000000007 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Earthquake
+/cast [@cursor] Earthquake
+END
+VER 3 0100000000000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Spirit Link Totem
+/cast [@cursor] Spirit Link Totem
+END
+VER 3 0100000000000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Earthbind Totem
+/cast [@cursor] Earthbind Totem
+END
+VER 3 0100000000000005 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Capacitor Totem
+/cast [@cursor] Capacitor Totem
+END
+VER 3 0100000000000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Healing Rain
+/cast [@cursor] Healing Rain
+END

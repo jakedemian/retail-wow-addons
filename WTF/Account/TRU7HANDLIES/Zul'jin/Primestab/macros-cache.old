@@ -1,0 +1,7 @@
+VER 3 0100000000000001 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Stealth
+/cast !stealth
+END
+VER 3 0100000000000002 " " "INV_MISC_QUESTIONMARK"
+/castsequence Wound Poison, Crippling Poison, Summon Steward
+END

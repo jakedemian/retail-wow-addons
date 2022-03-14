@@ -1,0 +1,78 @@
+
+RotacastPerDB = {
+	["CastButtonOptions"] = {
+		["Shown"] = true,
+		["Scale"] = 0,
+		["Cooldowns"] = true,
+	},
+	["SpecData"] = {
+		[255] = {
+			["Current"] = 1,
+			["GCD"] = false,
+			["Buttons"] = {
+				{
+				}, -- [1]
+			},
+			["Max"] = 1,
+			["HotkeyData"] = {
+			},
+		},
+		[254] = {
+			["Current"] = 1,
+			["GCD"] = false,
+			["Buttons"] = {
+				{
+				}, -- [1]
+			},
+			["Max"] = 1,
+			["HotkeyData"] = {
+			},
+		},
+		[253] = {
+			["Current"] = 1,
+			["GCD"] = false,
+			["Buttons"] = {
+				{
+				}, -- [1]
+			},
+			["Max"] = 1,
+			["HotkeyData"] = {
+			},
+		},
+	},
+	["ScrollBind"] = "Off",
+	["SequenceOptions"] = {
+		["Enter"] = false,
+		["Combat"] = false,
+		["Switch"] = false,
+		["AutoCast"] = false,
+		["Leave"] = false,
+		["Default"] = false,
+		["IgnoreGCD"] = false,
+	},
+	["GeneralOptions"] = {
+		["Locked"] = false,
+		["AutoCastButton"] = false,
+		["AutoSequenceBar"] = false,
+	},
+	["UpdateVersion"] = 5,
+	["PlayerID"] = "Player-60-0CE0BD25",
+	["ScrollToggle"] = false,
+	["SetPoints"] = {
+		["Header"] = {
+		},
+		["CastButton"] = {
+		},
+		["Options"] = {
+		},
+		["Icon"] = {
+		},
+		["GuideDisplay"] = {
+		},
+	},
+	["LoadShow"] = {
+		["Cast"] = false,
+		["Sequence"] = false,
+		["Binding"] = false,
+	},
+}

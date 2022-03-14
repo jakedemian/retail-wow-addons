@@ -1,0 +1,10 @@
+## Interface: 90100
+## Title: |cffA236EFA|cff9448F1m|cff865BF2a|cff786DF4l|cff6A80F6u|cff5D92F7'|cff4FA4F9s|r |cfffe7b2cSoundpack+
+## Version: 3.0.7release
+## Author: Amalu#2460
+## Notes: A media collection that mainly focuses on Sounds, but also includes some Textures, Fonts, and Icons.
+
+libs\LibStub\LibStub.lua
+libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+embeds.xml
+Amalu_Soundpack+.lua 

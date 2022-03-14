@@ -1,0 +1,4 @@
+VER 3 0100000000000001 " " "136174"
+#showtooltip Spell Lock
+/cast Spell Lock
+END

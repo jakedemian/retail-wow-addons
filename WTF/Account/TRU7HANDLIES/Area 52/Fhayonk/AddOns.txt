@@ -1,0 +1,4 @@
+AAP-Core: disabled
+TinyInspect: disabled
+!InspectFix: disabled
+Pawn: disabled

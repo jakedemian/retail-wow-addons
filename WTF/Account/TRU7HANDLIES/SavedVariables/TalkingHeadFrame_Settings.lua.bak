@@ -1,0 +1,17 @@
+
+THF_DB = {
+	["TextFont"] = "Friz Quadrata TT",
+	["Disabled"] = false,
+	["Scale"] = 0.6866500091552734,
+	["TitleFont"] = "Friz Quadrata TT",
+	["TextFlag"] = "None",
+	["LowerStrata"] = false,
+	["Y"] = -77.49981689453125,
+	["X"] = 211.1685943603516,
+	["Point"] = "LEFT",
+	["RelativePoint"] = "LEFT",
+	["TextSize"] = 16,
+	["ClickThrough"] = false,
+	["TitleSize"] = 22,
+	["TitleFlag"] = "None",
+}

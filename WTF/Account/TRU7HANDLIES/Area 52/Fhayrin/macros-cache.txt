@@ -1,0 +1,12 @@
+VER 3 0100000000000002 "i_strike" "1344650"
+#showtooltip Infernal Strike
+/cast [@Arodarin] Infernal Strike
+END
+VER 3 0100000000000003 "my eyes" "1305156"
+/y OOCH OOOOUCH MYY EEYYYYEEEEES!! OwO
+/cast Eye Beam
+END
+VER 3 0100000000000001 "sigil" "1344652"
+#showtooltip Sigil of Flame
+/cast [@Arodarin] Sigil of Flame
+END

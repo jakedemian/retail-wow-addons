@@ -1,0 +1,46 @@
+
+NameplateSCTDB = {
+	["profileKeys"] = {
+		["Fhdgshsfnsdf - Zul'jin"] = "Default",
+		["Primecast - Zul'jin"] = "Default",
+		["Primesham - Zul'jin"] = "Default",
+		["Grabbahan - Moon Guard"] = "Default",
+		["Primeshoot - Zul'jin"] = "Default",
+		["Primestab - Zul'jin"] = "Default",
+		["Primeslay - Zul'jin"] = "Default",
+		["Primedrood - Zul'jin"] = "Default",
+		["Primepriest - Zul'jin"] = "Default",
+		["Primeslam - Zul'jin"] = "Default",
+		["Primedeath - Stormrage"] = "Default",
+		["Primedeth - Zul'jin"] = "Default",
+		["Primepal - Zul'jin"] = "Default",
+		["Primepunch - Zul'jin"] = "Default",
+		["Primelocker - Zul'jin"] = "Default",
+		["Primepaladin - Zul'jin"] = "Default",
+		["Primadin - Stormrage"] = "Default",
+		["Diuhreeuh - Area 52"] = "Default",
+	},
+	["global"] = {
+		["personal"] = true,
+		["yOffset"] = 110,
+		["formatting"] = {
+			["size"] = 30,
+		},
+		["offTargetFormatting"] = {
+			["size"] = 25,
+		},
+		["animationsPersonal"] = {
+			["crit"] = "verticalDown",
+		},
+		["animations"] = {
+			["crit"] = "fountain",
+		},
+		["modOffTargetStrata"] = true,
+		["sizing"] = {
+			["missScale"] = 3,
+			["miss"] = true,
+			["critsScale"] = 2,
+		},
+		["textShadow"] = true,
+	},
+}

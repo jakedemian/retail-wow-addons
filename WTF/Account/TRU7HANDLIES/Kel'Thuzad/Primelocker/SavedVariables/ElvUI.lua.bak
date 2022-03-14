@@ -1,0 +1,217 @@
+
+ElvCharacterDB = {
+	["ChatEditHistory"] = {
+		"/ec", -- [1]
+		"/bt", -- [2]
+		"/cw Asmongold love u bb", -- [3]
+		"/who asmon", -- [4]
+		"/who mac", -- [5]
+		"/who mc", -- [6]
+		"/who", -- [7]
+		"/wa", -- [8]
+		"/i just to be up front with you guys", -- [9]
+		"/i i'm gay and i have a micropenis", -- [10]
+		"/i i do", -- [11]
+		"/s ec", -- [12]
+	},
+	["ChatHistoryLog"] = {
+		{
+			"just to be up front with you guys", -- [1]
+			"Primelocker-Kel'Thuzad", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Primelocker-Kel'Thuzad", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			85, -- [11]
+			"Player-3693-0A626984", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecPrimelocker|r",
+			[51] = 1565823209,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [1]
+		{
+			"i'm gay and i have a micropenis", -- [1]
+			"Primelocker-Kel'Thuzad", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Primelocker-Kel'Thuzad", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			87, -- [11]
+			"Player-3693-0A626984", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecPrimelocker|r",
+			[51] = 1565823214,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [2]
+		{
+			"Sounds legit.", -- [1]
+			"Casarole-Stormreaver", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Casarole-Stormreaver", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			95, -- [11]
+			"Player-58-0B7E9C86", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Casarole-Stormreaver|r",
+			[51] = 1565823261,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [3]
+		{
+			"Hopefully you don't plan on playing classic.", -- [1]
+			"Casarole-Stormreaver", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Casarole-Stormreaver", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			97, -- [11]
+			"Player-58-0B7E9C86", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Casarole-Stormreaver|r",
+			[51] = 1565823277,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [4]
+		{
+			"i do", -- [1]
+			"Primelocker-Kel'Thuzad", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Primelocker-Kel'Thuzad", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			102, -- [11]
+			"Player-3693-0A626984", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecPrimelocker|r",
+			[51] = 1565823299,
+			[50] = "CHAT_MSG_INSTANCE_CHAT_LEADER",
+		}, -- [5]
+		{
+			"= /", -- [1]
+			"Casarole-Stormreaver", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Casarole-Stormreaver", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			104, -- [11]
+			"Player-58-0B7E9C86", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Casarole-Stormreaver|r",
+			[51] = 1565823309,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [6]
+		{
+			"It'd be better if you didn't!", -- [1]
+			"Casarole-Stormreaver", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"Casarole-Stormreaver", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			105, -- [11]
+			"Player-58-0B7E9C86", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfffef367Casarole-Stormreaver|r",
+			[51] = 1565823322,
+			[50] = "CHAT_MSG_INSTANCE_CHAT",
+		}, -- [7]
+		{
+			"|cffffff00Beggar's Haunt is under attack!|r", -- [1]
+			"", -- [2]
+			"", -- [3]
+			"3. LocalDefense - Duskwood", -- [4]
+			"", -- [5]
+			"", -- [6]
+			22, -- [7]
+			3, -- [8]
+			"LocalDefense - Duskwood", -- [9]
+			0, -- [10]
+			243, -- [11]
+			false, -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "",
+			[51] = 1565824001,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [8]
+		{
+			"ec", -- [1]
+			"Primelocker-Kel'Thuzad", -- [2]
+			"Common", -- [3]
+			"", -- [4]
+			"Primelocker-Kel'Thuzad", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			373, -- [11]
+			"Player-3693-0A626984", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8686ecPrimelocker|r",
+			[51] = 1565824647,
+			[50] = "CHAT_MSG_SAY",
+		}, -- [9]
+	},
+}
